@@ -10,9 +10,8 @@ void setup() {
 void loop() {
   // No es necesario poner nada en el loop para este ejemplo
 }
-´´´
-
-##### Ejercicio n°2: LED intermitente (blink)
+```
+ #####Ejercicio n°2: LED intermitente (blink)
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
   pinMode(13, OUTPUT);  // Pin 13 como salida

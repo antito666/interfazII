@@ -97,4 +97,5 @@ void loop() {
   delay(2000); // 2 segundos
 }
 ```
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Semaforo.png"/>
 

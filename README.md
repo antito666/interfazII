@@ -24,7 +24,6 @@ void loop() {   // Se repite infinitamente
   delay(1000);             // Esperar 1 segundo
 }
 ```
-<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_potenciometro.png"/>
 
 ##### Ejercicio n°3: Control pulsador
 ```js
@@ -53,6 +52,8 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_potenciometro.png"/>
+
 ##### Ejercicio n°5: Semaforo
 ```js
 // C++ code - Semáforo Autos y Peatones

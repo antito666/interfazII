@@ -12,6 +12,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Hola_Mundo.png"/>
+
  ##### Ejercicio n°2: LED intermitente (blink)
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)

@@ -27,6 +27,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_parpadeante.png"/>
+
 ##### Ejercicio n°3: Control pulsador
 ```js
 void setup() {

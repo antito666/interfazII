@@ -165,5 +165,151 @@ void draw()
   ellipse(width/2, height/2, d, d);   
 }
 ```
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/arduino_processing.png"/>
 
+##### Ejercicio n°7: Arduino + Botón + Procesamiento
+###### Código Arduino
+```js
+int buttonPin = 2;  // Pin del botón
+int buttonState = 0;
 
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    Serial.println(1);        // Enviar un "1" a Processing
+    delay(200);               // Evitar rebotes
+  }
+}
+```
+###### Procesamiento de código
+```js
+import processing.serial.*;
+
+Serial myPort;
+ArrayList<PVector> circles; 
+
+void setup() {
+  size(1920, 1080);
+  background(0);
+  
+  // Ajusta el nombre del puerto según tu Arduino
+  println(Serial.list());
+  //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600);
+  
+  circles = new ArrayList<PVector>();
+}
+
+void draw() {
+  //background(0);
+  
+  // Dibujar círculos almacenados
+  fill(#2A890E);
+  //noStroke();
+  stroke(0, 0, 0);
+  for (PVector c : circles) {
+    ellipse(c.x, c.y, 200, 200);
+  }
+  
+  // Revisar si llega algo de Arduino
+  if (myPort.available() > 0) {
+    String val = myPort.readStringUntil('\n');
+    if (val != null) {
+      val = trim(val);
+      if (val.equals("1")) {
+        // Cada vez que se aprieta el botón, agregar un círculo en posición aleatoria
+        circles.add(new PVector(random(width), random(height)));
+      }
+    }
+  }
+}
+```
+
+##### Ejercicio n°8: Arduino + botón + potenciómetro + Procesamiento
+###### Código Arduino
+```js
+int buttonPin = 2;       // Pin del botón
+int potPin = A0;         // Pin del potenciómetro
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    int potValue = analogRead(potPin);   // 0 - 1023
+    Serial.print("BTN,");     // etiqueta para Processing
+    Serial.println(potValue); // mando el valor junto con el evento
+    delay(200);               // debounce simple
+  }
+}
+```
+###### Procesamiento de código
+```js
+import processing.serial.*;
+
+Serial myPort;
+ArrayList<CircleData> circles; 
+
+void setup() {
+  size(1200, 720);
+  background(0);
+  
+  // Ajusta el puerto según tu Arduino
+  println(Serial.list());
+  myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  //myPort = new Serial(this, Serial.list()[0], 9600);
+  
+  circles = new ArrayList<CircleData>();
+}
+
+void draw() {
+  //background(0);
+  
+  // Dibujar todos los círculos guardados
+  fill(#F77AC3);
+  //noStroke();
+  fill(#F77AC3);
+  stroke(0, 0, 0);
+  for (CircleData c : circles) {
+    ellipse(c.x, c.y, c.size, c.size);
+  }
+  
+  // Leer datos de Arduino
+  if (myPort.available() > 0) {
+    String val = myPort.readStringUntil('\n');
+    if (val != null) {
+      val = trim(val);
+      if (val.startsWith("BTN")) {
+        // Extraer el valor del potenciómetro
+        String[] parts = split(val, ',');
+        if (parts.length == 2) {
+          float potVal = float(parts[1]);
+          float circleSize = map(potVal, 0, 1023, 10, 100); // tamaño 10-100 px
+          circles.add(new CircleData(random(width), random(height), circleSize));
+        }
+      }
+    }
+  }
+}
+
+// Clase para guardar datos de cada círculo
+class CircleData {
+  float x, y, size;
+  CircleData(float x, float y, float size) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+  }
+}
+```

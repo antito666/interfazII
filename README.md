@@ -1,6 +1,6 @@
 # interfazII
 
-##### Ejercicio n°1: Hola mundo
+##### Ejercicio n°1: "¡Hola Mundo!" en Arduino
 ```js
 void setup() {
   Serial.begin(9600); // Inicia la comunicación serie a 9600 bps
@@ -57,7 +57,7 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_potenciometro.png"/>
 
-##### Ejercicio n°5: Semaforo
+##### Ejercicio n°5: Semaforo en Arduino
 ```js
 // C++ code - Semáforo Autos y Peatones
 

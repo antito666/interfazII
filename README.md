@@ -107,7 +107,7 @@ void loop() {
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Semaforo.png"/>
 
 ##### Ejercicio n°6: Precesamiento Arduino
-### Código Arduino
+###### Código Arduino
 ```js
 unsigned int ADCValue;
 void setup(){

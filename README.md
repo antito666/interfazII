@@ -28,7 +28,7 @@ void loop() {   // Se repite infinitamente
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_parpadeante.png"/>
 
-##### Ejercicio n°3: Control pulsador
+##### Ejercicio n°3: LED con pulsador
 ```js
 void setup() {
   pinMode(2, INPUT);  // Botón como entrada
@@ -105,4 +105,21 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Semaforo.png"/>
+
+##### Ejercicio n°6: Precesamiento Arduino
+## A second-level heading Código Arduino
+```js
+unsigned int ADCValue;
+void setup(){
+    Serial.begin(9600);
+}
+
+void loop(){
+
+ int val = analogRead(0);
+   val = map(val, 0, 300, 0, 255);
+    Serial.println(val);
+delay(50);
+}
+```
 

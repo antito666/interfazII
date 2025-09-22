@@ -384,6 +384,7 @@ void loop() {
   delay(10);
 }
 ```
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/botonera_arduino_processing.png"/>
 ###### Procesamiento de código
 ```js
 // Importamos librería para comunicación serial

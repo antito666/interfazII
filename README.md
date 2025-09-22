@@ -315,6 +315,7 @@ class CircleData {
 ```
 ##### Ejercicio n°9: Botonera con sonido
 ###### Código Arduino
+```js
 // --- Configuración de botones ---
 const int numButtons = 3;
 const int buttonPins[numButtons] = {2, 4, 7};
@@ -382,8 +383,9 @@ void loop() {
 
   delay(10);
 }
-
+```
 ###### Procesamiento de código
+```js
 // Importamos librería para comunicación serial
 import processing.serial.*;
 // Importamos librería Minim para manejar audio
@@ -463,3 +465,4 @@ void playTrack(int index) {
   // Actualizamos la variable para saber cuál es la pista activa
   currentTrack = index;
 }
+```

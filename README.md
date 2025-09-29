@@ -13,7 +13,7 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Hola_Mundo.png"/>
 
- ##### Ejercicio n°2: LED intermitente (blink)
+ ##### Ejercicio n°2: LED parpadeante
 ```js
 void setup() {  // Configuración inicial (ej: pines como entrada/salida)
   pinMode(13, OUTPUT);  // Pin 13 como salida
@@ -106,75 +106,7 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Semaforo.png"/>
 
-##### Ejercicio n°6: Semaforo parpadeo
-```js
-// C++ code - Semáforo Autos y Peatones
-
-// Definición de pines
-int LED_1 = 6;  // Luz roja autos
-int LED_2 = 7;  // Luz amarilla autos
-int LED_3 = 8;  // Luz verde autos
-int LED_4 = 9;  // Luz verde peatones
-int LED_5 = 10; // Luz roja peatones
-
-void setup() {
-  // Configuramos todos los pines como salida
-  pinMode(LED_1, OUTPUT);
-  pinMode(LED_2, OUTPUT);
-  pinMode(LED_3, OUTPUT);
-  pinMode(LED_4, OUTPUT);
-  pinMode(LED_5, OUTPUT);
-}
-
-void loop() {
-  // 🚦 Fase 1: Autos en verde, peatones en rojo
-  digitalWrite(LED_1, LOW);   // Rojo autos apagado
-  digitalWrite(LED_2, LOW);   // Amarillo autos apagado
-  digitalWrite(LED_3, HIGH);  // Verde autos encendido
-  digitalWrite(LED_4, LOW);   // Verde peatones apagado
-  digitalWrite(LED_5, HIGH);  // Rojo peatones encendido
-  delay(5000); // 5 segundos
-
-  // 🚦 Fase 2: Amarillo autos, peatones siguen en rojo
-  digitalWrite(LED_3, LOW);   // Verde autos apagado
-  digitalWrite(LED_2, HIGH);  // Amarillo autos encendido
-  delay(2000); // 2 segundos
-  digitalWrite(LED_2, LOW);   // Amarillo autos apagado
-
-  // 🚦 Fase 3: Rojo autos, verde peatones
-  
-  digitalWrite(LED_1, HIGH);  // Rojo autos encendido
-  digitalWrite(LED_5, LOW);   // Rojo peatones apagado
-   digitalWrite(LED_4, HIGH); 
-  delay(5000); // 5 segundos
-   digitalWrite(LED_4, LOW);  // Verde peatones comienza a parpadear
-  delay(500);
-   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(500) ; 
-   digitalWrite(LED_4, LOW);  // Verde peatones apagado
-  delay(500);
-   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(500) ; 
-   digitalWrite(LED_4, LOW);  // Verde peatones parpadea mas rapido
-  delay(200);
-   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(200) ; 
-   digitalWrite(LED_4, LOW);  // Verde peatones apagado
-  delay(200);
-   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(200) ; 
-   digitalWrite(LED_4, LOW);  // Verde peatones apagado
-  delay(200);
-   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(200) ; 
-  // 🚦 Fase 4: Rojo autos, rojo peatones (tiempo intermedio)
-  //digitalWrite(LED_4, LOW);   // Verde peatones apagado
-  //digitalWrite(LED_5, HIGH);  // Rojo peatones encendido
-  //delay(2000); // 2 segundos
-}
-```
-
-##### Ejercicio n°7: Precesamiento Arduino
+##### Ejercicio n°6: Potenciometro Procesamiento Arduino
 ###### Código Arduino
 ```js
 unsigned int ADCValue;
@@ -235,7 +167,7 @@ void draw()
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/arduino_processing.png"/>
 
-##### Ejercicio n°8: Arduino + Botón + Procesamiento
+##### Ejercicio n°7: Pulsador + Arduino + Processing
 ###### Código Arduino
 ```js
 int buttonPin = 2;  // Pin del botón
@@ -299,7 +231,7 @@ void draw() {
 }
 ```
 
-##### Ejercicio n°9: Arduino + botón + potenciómetro + Procesamiento
+##### Ejercicio n°8: Arduino + Pulsador + Potenciómetro + Procesamiento
 ###### Código Arduino
 ```js
 int buttonPin = 2;       // Pin del botón
@@ -381,7 +313,7 @@ class CircleData {
   }
 }
 ```
-##### Ejercicio n°10: Botonera con sonido
+##### Ejercicio n°10: Botonera con sonido - Funcion if + else
 ###### Código Arduino
 ```js
 // --- Configuración de botones ---

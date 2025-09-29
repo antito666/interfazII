@@ -105,6 +105,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Semaforo.png"/>
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Captura%20de%20pantalla%202025-09-29%20094550.png"/>
 
 ##### Ejercicio n°6: Potenciometro Procesamiento Arduino
 ###### Código Arduino

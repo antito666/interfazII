@@ -56,6 +56,7 @@ void loop() {
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_potenciometro.png"/>
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/IMG_20250818_104553_170.webp"/>
 
 ##### Ejercicio n°5: Semaforo en Arduino
 ```js

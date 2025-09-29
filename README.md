@@ -235,7 +235,7 @@ void draw()
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/arduino_processing.png"/>
 
-##### Ejercicio n°7: Arduino + Botón + Procesamiento
+##### Ejercicio n°8: Arduino + Botón + Procesamiento
 ###### Código Arduino
 ```js
 int buttonPin = 2;  // Pin del botón
@@ -299,7 +299,7 @@ void draw() {
 }
 ```
 
-##### Ejercicio n°8: Arduino + botón + potenciómetro + Procesamiento
+##### Ejercicio n°9: Arduino + botón + potenciómetro + Procesamiento
 ###### Código Arduino
 ```js
 int buttonPin = 2;       // Pin del botón
@@ -381,7 +381,7 @@ class CircleData {
   }
 }
 ```
-##### Ejercicio n°9: Botonera con sonido
+##### Ejercicio n°10: Botonera con sonido
 ###### Código Arduino
 ```js
 // --- Configuración de botones ---

@@ -42,7 +42,7 @@ void loop() {
   }
 }
 ```
-<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Led_parpadeante.png"/>
+
 
 ##### Ejercicio n°4: LED con potenciometro
 ```js

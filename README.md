@@ -315,7 +315,7 @@ class CircleData {
   }
 }
 ```
-##### Ejercicio n°10: Botonera con sonido - Funcion if + else
+##### Ejercicio n°9: Botonera con sonido - Funcion if + else
 ###### Código Arduino
 ```js
 // --- Configuración de botones ---

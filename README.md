@@ -125,6 +125,7 @@ delay(50);
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/6a4316d58ec34617a10bbc6f03152f77cf797868/img/arduino_processing.png"/>
+
 ###### Procesamiento de código
 ```js
 import processing.serial.*;

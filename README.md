@@ -42,7 +42,7 @@ void loop() {
   }
 }
 ```
-
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/Captura%20de%20pantalla%202025-09-29%20095247.png"/>
 
 ##### Ejercicio n°4: LED con potenciometro
 ```js

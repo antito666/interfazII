@@ -605,3 +605,5 @@ void draw() {
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Entrega_1.webp"/>
+<img src="
+

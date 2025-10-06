@@ -126,7 +126,7 @@ delay(50);
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/6a4316d58ec34617a10bbc6f03152f77cf797868/img/arduino_processing.png"/>
 
-###### Procesamiento de código
+###### Código Processing
 ```js
 import processing.serial.*;
 
@@ -191,7 +191,7 @@ void loop() {
   }
 }
 ```
-###### Procesamiento de código
+###### Código Processing
 ```js
 import processing.serial.*;
 
@@ -258,7 +258,7 @@ void loop() {
   }
 }
 ```
-###### Procesamiento de código
+###### Código Processing
 ```js
 import processing.serial.*;
 
@@ -390,7 +390,7 @@ void loop() {
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/botonera_arduino_processing.png"/>
 
-###### Procesamiento de código
+###### Código Processing
 ```js
 // Importamos librería para comunicación serial
 import processing.serial.*;
@@ -470,5 +470,137 @@ void playTrack(int index) {
   
   // Actualizamos la variable para saber cuál es la pista activa
   currentTrack = index;
+}
+```
+##### Entrega 1: fusión ejercicio n°6 y n°7
+###### Código Arduino
+```js
+// CONEXIÓN: Potenciómetro Pin Central a A0. Extremos a 5V y GND.
+
+int sensorPin = 0;     // Pin para el potenciómetro (A0)
+int analogValue = 0;
+int lastAnalogValue = 0;
+// Si el valor cambia en más de 5 unidades, se considera movimiento.
+const int threshold = 5;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int rawValue = analogRead(sensorPin);
+ 
+  // Escala el rango COMPLETO (0-1023) a 0-255.
+  analogValue = map(rawValue, 0, 1023, 0, 255);
+ 
+  // ------------------------------------
+  // LÓGICA CLAVE: DETECCIÓN DE MOVIMIENTO
+  // ------------------------------------
+  // Solo si la diferencia es mayor que el umbral, enviamos el dato.
+  if (abs(analogValue - lastAnalogValue) > threshold) {
+   
+    // 1. Envía el valor (¡Esto es el evento de movimiento!)
+    Serial.println(analogValue);
+   
+    // 2. Actualiza la última lectura para la próxima comparación
+    lastAnalogValue = analogValue;
+  }
+ 
+  delay(10); // Estabilidad en la transmisión
+}
+```
+###### Código Processing
+```js
+import processing.serial.*;
+
+Serial myPort;          // Objeto de la clase Serial
+// Almacena las propiedades de los círculos (X, Y, y Diámetro Z)
+ArrayList<PVector> circles; 
+
+// Variable que guarda el último valor recibido para control de tamaño/color.
+int sensorVal = 0;      
+
+void setup() {
+  background(0); 
+  size(1080, 720);
+  noStroke();
+  
+  circles = new ArrayList<PVector>();
+  
+  // ----------------------------------------------------
+  // CONFIGURACIÓN SERIAL: AJUSTA ESTA LÍNEA A TU PUERTO
+  // ----------------------------------------------------
+  println("Puertos disponibles: " + Serial.list());
+  // Elige el puerto correcto (ej: Serial.list()[0] o "COM3")
+  myPort = new Serial(this, Serial.list()[0], 9600);
+}
+
+void draw() {
+  // Limpia el fondo, pero con una pequeña transparencia para un efecto de "rastro"
+  fill(0, 30); 
+  rect(0, 0, width, height); 
+  
+  // 1. LECTURA SERIAL (El Bloque de Eventos)
+  if (myPort.available() > 0) {
+    String val = myPort.readStringUntil('\n'); 
+    
+    if (val != null) {
+      try {
+        int receivedVal = Integer.valueOf(val.trim());
+        
+        // **ACTUALIZACIÓN:** Guardar el valor para el color y tamaño
+        sensorVal = receivedVal; 
+        
+        // -------------------------------------------
+        // 2. EVENTO: CREAR Y ALMACENAR EL CÍRCULO
+        // -------------------------------------------
+        // La posición del nuevo círculo es aleatoria
+        float newX = random(width);
+        float newY = random(height);
+        
+        // Almacenamos X, Y, y el TAMAÑO actual (Z) en el PVector
+        // Esto es CLAVE: El círculo "hereda" el tamaño que tenía el sensor en el momento de su creación.
+        float creationDiameter = map(sensorVal, 0, 255, 40, 300);
+        PVector newCircle = new PVector(newX, newY, creationDiameter);
+        circles.add(newCircle);
+      }
+      catch(Exception e) {
+        // Ignorar errores de parsing
+      }
+    }
+  }  
+  
+  // 3. DIBUJAR Y REDIMENSIONAR TODOS LOS CÍRCULOS
+  
+  // Los parámetros dinámicos (Tamaño/Color) se basan en el último sensorVal recibido.
+  
+  // Control de Color Rojo: Mapea el valor (0-255) al componente Rojo
+  float r = map(sensorVal, 0, 255, 100, 255);
+  
+  // Control de Color Verde: Mapea el valor (0-255) al componente Verde
+  float g = map(sensorVal, 0, 255, 50, 200);
+  
+  // Dibujar todos los círculos
+  for (PVector c : circles) {
+    // Aplica el color dinámico (actual) a todos los círculos
+    fill(r, g, 0); 
+    
+    // **NOTA CLAVE:** Usamos el componente Z (el tamaño inicial) para la posición.
+    // Para que todos se muevan y redimensionen a la vez, debemos usar el sensorVal
+    
+    // Redimensionamiento y Movimiento Dinámico:
+    float currentDiameter = map(sensorVal, 0, 255, 40, 300);
+    
+    // Movimiento Horizontal (opcional, pero incluido para hacer algo dinámico con la X)
+    float currentX = map(sensorVal, 0, 255, 0, width);
+    
+    // Dibujar el círculo en su posición inicial (c.y) con la nueva X y diámetro
+    ellipse(currentX, c.y, currentDiameter, currentDiameter);
+  }
+  
+  // OPCIONAL: Limitar el número de círculos en pantalla
+  if (circles.size() > 10) {
+    circles.remove(0); 
+  }
 }
 ```

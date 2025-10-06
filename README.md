@@ -473,6 +473,12 @@ void playTrack(int index) {
 }
 ```
 ##### Entrega 1: fusión ejercicio n°6 y n°7
+
+Este ejercicio se basa en el ejercicio n° 6: Arduino, Processing con potenciómetro y el ejercicio n°7: Arduino, Processing con pulsador.
+El ejercicio tiene tres objetivos clave, que es la creación de múltiples círculos, control dinámico de tamaño/color y efecto de desvanecimiento cuando de mueve de derecha a izquierda.
+Obtuve ayuda de la inteligencia artificial géminis, donde le pregunte que me juntara estos dos ejercicios donde los círculos solo tienen que aparecer, mover y cambiar de color cuando se mueva el potenciómetro.
+
+
 ###### Código Arduino
 ```js
 // CONEXIÓN: Potenciómetro Pin Central a A0. Extremos a 5V y GND.
@@ -605,5 +611,5 @@ void draw() {
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Entrega_1.webp"/>
-<img src="
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/entrega_1.png"/>
 

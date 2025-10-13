@@ -613,9 +613,6 @@ void draw() {
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Entrega_1.webp"/>
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/entrega_1.png"/>
 
-<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Entrega_1.webp"/>
-<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/entrega_1.png"/>
-
 ##### Ejercicio n°10: Sensor Sharp
 ###### Código Arduino
 ```js
@@ -675,3 +672,29 @@ void draw()
 }
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Sensor_Sharp.png"/>
+
+##### Ejercicio n°11: Sensor de humedad (DFRobot)
+###### Código Arduino
+```js
+/*******************************
+           Conexión:
+             VCC-5V
+             GND-GND
+             S-Analog pin A0
+
+Puedes ponder el sensor en la palma de tu mano
+para sensar la humedad de  tu palma.
+ ********************************/
+
+void setup()
+{
+  Serial.begin(9600);// abre el puerto serial y Establece la velocidad en baudios a 9600 bps
+}
+void loop()
+{
+  int sensorValue;
+  sensorValue = analogRead(0);   //conectar el sensor de humedad al pin analogo 0
+  Serial.println(sensorValue); //imprime el valor a serial.
+  delay(200);
+}
+```

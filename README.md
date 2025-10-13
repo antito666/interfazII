@@ -633,6 +633,7 @@ void loop() {
 }
 ```
 ###### Código Processing
+```js
 import processing.serial.*;
 
 Serial myPort;  // Create object from Serial class
@@ -672,3 +673,5 @@ void draw()
   ellipse(width/2, height/2, d, d);   
 
 }
+```
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Sensor_Sharp.png"/>

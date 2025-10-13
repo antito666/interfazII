@@ -609,7 +609,7 @@ void draw() {
     circles.remove(0); 
   }
 }
-
+```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Entrega_1.webp"/>
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/entrega_1.png"/>
 

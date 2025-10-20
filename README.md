@@ -711,7 +711,7 @@ void loop()
   delay(200);
 }
 ```
-##### Ejercicio n°13: Promedio de imagenesarduino
+##### Ejercicio n°13: Promedio de imagenes 
 ###### Código Arduino
 ```js
 void setup() {

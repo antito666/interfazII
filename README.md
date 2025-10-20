@@ -9,9 +9,9 @@
 7. [Arduino + Pulsador + Processing] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n7-pulsador--arduino--processing
 8. [Arduino + Pulsador + Potenciometro + Processing] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento
 9. [Estructura de control de Arduino] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n9-botonera-con-sonido---funcion-if--else
-10.[Entrega 1] (#https://github.com/antito666/interfazII/blob/main/README.md#entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
+10.[Entrega 1] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-10-entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
 11.  
-12. [Sensor de humedad] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n11-sensor-de-humedad-dfrobot
+12. [Sensor de humedad] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n12-sensor-de-humedad-dfrobot
 
 ##### Ejercicio n°1: "¡Hola Mundo!" en Arduino
 ```js
@@ -485,7 +485,7 @@ void playTrack(int index) {
   currentTrack = index;
 }
 ```
-##### Entrega 1: fusión ejercicio n°6 y n°7
+##### Ejercicio 10 - Entrega 1: fusión ejercicio n°6 y n°7
 
 Este ejercicio se basa en el ejercicio n° 6: Arduino, Processing con potenciómetro y el ejercicio n°7: Arduino, Processing con pulsador.
 El ejercicio tiene tres objetivos clave, que es la creación de múltiples círculos, control dinámico de tamaño/color y efecto de desvanecimiento cuando de mueve de derecha a izquierda.
@@ -626,7 +626,7 @@ void draw() {
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Entrega_1.webp"/>
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/entrega_1.png"/>
 
-##### Ejercicio n°10: Sensor Sharp
+##### Ejercicio n°11: Sensor Sharp
 ###### Código Arduino
 ```js
 // Definir el pin del sensor Sharp
@@ -686,7 +686,7 @@ void draw()
 ```
 <img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Sensor_Sharp.png"/>
 
-##### Ejercicio n°11: Sensor de humedad (DFRobot)
+##### Ejercicio n°12: Sensor de humedad (DFRobot)
 ###### Código Arduino
 ```js
 /*******************************

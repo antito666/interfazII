@@ -9,7 +9,7 @@
 7. [Arduino + Pulsador + Processing] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n7-pulsador--arduino--processing
 8. [Arduino + Pulsador + Potenciometro + Processing] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento
 9. [Estructura de control de Arduino] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n9-botonera-con-sonido---funcion-if--else
-10.[Entrega 1] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-10-entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
+10.[Entrega 1] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-10---entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
 11.  
 12. [Sensor de humedad] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n12-sensor-de-humedad-dfrobot
 

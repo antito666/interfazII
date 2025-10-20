@@ -790,3 +790,4 @@ void calcAverage(float t) {
   avgImg.updatePixels();
 }
 ```
+<img src="https://raw.githubusercontent.com/antito666/interfazII/refs/heads/main/img/Promedio_de_imagenes.png"/>

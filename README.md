@@ -10,8 +10,8 @@
 8. [Arduino + Pulsador + Potenciometro + Processing](#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento) <br>
 9. [Estructura de control de Arduino](#ejercicio-n9-botonera-con-sonido---funcion-if--else) <br>
 10.[Entrega 1](#ejercicio-10---entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7) <br>
-11. [Sensor Sharp](#ejercicio-n11-sensor-sharp) <br>
-12. [Sensor de humedad](#ejercicio-n12-sensor-de-humedad-dfrobot) <br>
+11.[Sensor Sharp](#ejercicio-n11-sensor-sharp) <br>
+12.[Sensor de humedad](#ejercicio-n12-sensor-de-humedad-dfrobot) <br>
 
 ##### Ejercicio n°1: "¡Hola Mundo!" en Arduino
 ```js

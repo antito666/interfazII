@@ -9,7 +9,7 @@
 7. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n7-pulsador--arduino--processing
 8. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento
 9. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n9-botonera-con-sonido---funcion-if--else
-10. [] (#
+10. [] (#https://github.com/antito666/interfazII/blob/main/README.md#entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
 11. [] (#
 
 ##### Ejercicio n°1: "¡Hola Mundo!" en Arduino

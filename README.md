@@ -2,15 +2,16 @@
 ##### Introducción a Processing u Arduino para el desarrollo de una interfaz interactiva Humano-Máquina (humacchina) como pieza artística.
 1. [Hola Mundo](#ejercicio-n1-hola-mundo-en-arduino) <br>
 2. [LED parpadeante] (#ejercicio-n2-led-parpadeante
-3. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n3-led-con-pulsador
-4. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n4-led-con-potenciometro
-5. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n5-semaforo-en-arduino
-6. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n6-potenciometro-procesamiento-arduino
-7. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n7-pulsador--arduino--processing
-8. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento
-9. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n9-botonera-con-sonido---funcion-if--else
-10. [] (#https://github.com/antito666/interfazII/blob/main/README.md#entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
-11. [] (#
+3. [LED con pulsador] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n3-led-con-pulsador
+4. [LED con potenciometro] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n4-led-con-potenciometro
+5. [Semaforo] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n5-semaforo-en-arduino
+6. [Processing + Arduino con potenciometro] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n6-potenciometro-procesamiento-arduino
+7. [Arduino + Pulsador + Processing] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n7-pulsador--arduino--processing
+8. [Arduino + Pulsador + Potenciometro + Processing] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento
+9. [Estructura de control de Arduino] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n9-botonera-con-sonido---funcion-if--else
+10.[Entrega 1] (#https://github.com/antito666/interfazII/blob/main/README.md#entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7
+11.  
+12. [Sensor de humedad] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n11-sensor-de-humedad-dfrobot
 
 ##### Ejercicio n°1: "¡Hola Mundo!" en Arduino
 ```js

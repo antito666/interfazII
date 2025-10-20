@@ -1,17 +1,17 @@
 # interfazII
 ##### Introducción a Processing u Arduino para el desarrollo de una interfaz interactiva Humano-Máquina (humacchina) como pieza artística.
 1. [Hola Mundo](#ejercicio-n1-hola-mundo-en-arduino) <br>
-2. [LED parpadeante] (#ejercicio-n2-led-parpadeante) <br>
-3. [LED con pulsador] (#ejercicio-n3-led-con-pulsador) <br>
-4. [LED con potenciometro] (#ejercicio-n4-led-con-potenciometro) <br>
-5. [Semaforo] (#ejercicio-n5-semaforo-en-arduino) <br>
-6. [Processing + Arduino con potenciometro] (#ejercicio-n6-potenciometro-procesamiento-arduino) <br>
-7. [Arduino + Pulsador + Processing] (#ejercicio-n7-pulsador--arduino--processing) <br>
-8. [Arduino + Pulsador + Potenciometro + Processing] (#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento) <br>
-9. [Estructura de control de Arduino] (#ejercicio-n9-botonera-con-sonido---funcion-if--else) <br>
-10.[Entrega 1] (#ejercicio-10---entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7) <br>
-11. [Sensor Sharp] (#ejercicio-n11-sensor-sharp) <br>
-12. [Sensor de humedad] (#ejercicio-n12-sensor-de-humedad-dfrobot) <br>
+2. [LED parpadeante](#ejercicio-n2-led-parpadeante) <br>
+3. [LED con pulsador](#ejercicio-n3-led-con-pulsador) <br>
+4. [LED con potenciometro](#ejercicio-n4-led-con-potenciometro) <br>
+5. [Semaforo](#ejercicio-n5-semaforo-en-arduino) <br>
+6. [Processing + Arduino con potenciometro](#ejercicio-n6-potenciometro-procesamiento-arduino) <br>
+7. [Arduino + Pulsador + Processing](#ejercicio-n7-pulsador--arduino--processing) <br>
+8. [Arduino + Pulsador + Potenciometro + Processing](#ejercicio-n8-arduino--pulsador--potenci%C3%B3metro--procesamiento) <br>
+9. [Estructura de control de Arduino](#ejercicio-n9-botonera-con-sonido---funcion-if--else) <br>
+10.[Entrega 1](#ejercicio-10---entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7) <br>
+11. [Sensor Sharp](#ejercicio-n11-sensor-sharp) <br>
+12. [Sensor de humedad](#ejercicio-n12-sensor-de-humedad-dfrobot) <br>
 
 ##### Ejercicio n°1: "¡Hola Mundo!" en Arduino
 ```js

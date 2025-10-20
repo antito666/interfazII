@@ -6,7 +6,7 @@
 4. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n4-led-con-potenciometro
 5. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n5-semaforo-en-arduino
 6. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n6-potenciometro-procesamiento-arduino
-7. [] (#
+7. [] (#https://github.com/antito666/interfazII/blob/main/README.md#ejercicio-n7-pulsador--arduino--processing
 8. [] (#
 9. [] (#
 10. [] (#

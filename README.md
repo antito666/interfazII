@@ -1,7 +1,7 @@
 # interfazII
 ##### Introducción a Processing u Arduino para el desarrollo de una interfaz interactiva Humano-Máquina (humacchina) como pieza artística.
 1. [Hola Mundo](#ejercicio-n1-hola-mundo-en-arduino) <br>
-2. [LED parpadeante] (#
+2. [LED parpadeante] (#ejercicio-n2-led-parpadeante
 3. [] (#
 4. [] (#
 5. [] (#

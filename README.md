@@ -12,7 +12,7 @@
 10. [Entrega 1](#ejercicio-10---entrega-1-fusi%C3%B3n-ejercicio-n6-y-n7) <br>
 11. [Sensor Sharp](#ejercicio-n11-sensor-sharp) <br>
 12. [Sensor de humedad](#ejercicio-n12-sensor-de-humedad-dfrobot) <br>
-13. [Promedio de imagenes] (#ejercicio-n13-promedio-de-imagenes) <br>
+13. [Promedio de imagenes](#ejercicio-n13-promedio-de-imagenes) <br>
 
 ##### Ejercicio n°1: "¡Hola Mundo!" en Arduino
 ```js
